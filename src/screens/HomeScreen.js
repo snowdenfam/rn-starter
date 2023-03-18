@@ -4,6 +4,7 @@ import { Text, StyleSheet, View, Button } from 'react-native';
 const HomeScreen = () => {
   return <View>
   <Text style={styles.text}>Hi there!</Text>
+  <Button title="Go to Components Demo" />
   </View>
 };
 
