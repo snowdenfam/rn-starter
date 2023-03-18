@@ -14,7 +14,10 @@ const ListScreen = () => {
         {name: 'Friend #9', key: '9'},
     ];
 
-return ( <FlatList 
+return ( 
+<FlatList 
+  horizontal
+  
   data={friends}
  renderItem={({ item }) => {
    return <Text style={styles.textStyle}>{item.name}</Text>;
