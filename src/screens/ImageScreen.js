@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import ImageDetail from '../components/ImageDetail';
 
 const ImageScreen = () => {
-  return <View>
+  return ( <View>
    <ImageDetail />
    <ImageDetail />
    <ImageDetail />
@@ -11,7 +11,7 @@ const ImageScreen = () => {
 
 
   </View>
-
+);
 };
 
 const styles = StyleSheet.create ({});
