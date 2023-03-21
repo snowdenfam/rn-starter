@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, StyleSheet } from 'react-native';
 
 const ImageDetail = () => {
-  return <Text>Image Screen</Text>;
+  return <Text>Image Detail</Text>;
 
 };
 
