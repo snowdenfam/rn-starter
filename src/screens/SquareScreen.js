@@ -6,8 +6,6 @@ const SquareScreen = () => {
     const [red, setRed] = useState(0);
     const [blue, setBlue] = useState(0);
     const [green, setGreen] = useState(0);
-    
-console.log(red);
 
  return (
   <View>
@@ -22,8 +20,8 @@ console.log(red);
   color="Blue" 
   />
   <ColorCounter 
-   onIncrease={() => setGreen(Green + 1)}
-   onDecrease={() => setGreen(Green - 1)}
+   onIncrease={() => setGreen(green + 1)}
+   onDecrease={() => setGreen(green - 1)}
    color="Green" 
   />
 
