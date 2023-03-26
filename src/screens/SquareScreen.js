@@ -10,17 +10,14 @@ const SquareScreen = () => {
     const [green, setGreen] = useState(0);
 
     const setColor = (color, change) => {
- // color === ''red' , 'green', 'blue'
+ // color === 'red', 'green', 'blue'
  // change === +15, -15
- if (color === 'red') {
- if (red + change > 255 || red +  change < 0) {
-    return;
- } else {
-    setRed(red + change);
+ switch (color) {
+ case 'red':
+ red + change > 255 || red +  change < 0 ? null: setRed(red+change);
+ return;
  }
-
- }
-    };
+   };
 
  return (
   <View>
