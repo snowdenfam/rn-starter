@@ -27,10 +27,7 @@ const reducer = (state, action) => {
       return {...state, blue: state.blue + action.amount };
    default:
       return state;
-
   }
-
-
 };
 
 const SquareScreen = () => {
@@ -63,9 +60,7 @@ const { red, green, blue } = state;
     backgroundColor: `rgb(${red},${green},${blue})` }} 
     />
   </View>
-
  );
-
 };
 
 const styles = StyleSheet.create({});
