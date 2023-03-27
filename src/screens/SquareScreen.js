@@ -3,8 +3,24 @@ import { View, Text, StyleSheet } from 'react-native';
 import ColorCounter from '../components/ColorCounter';
 
 const COLOR_INCREMENT = 15;
+
 // action: means how can we change our state object
+//action === {colorToChange: 'red' || 'green' || 'blue', amount: 15 || -15 }
+// state === {red: number, green: number, blue: number} //
+
 const reducer = (state, action) => {
+  switch (action.colorToChange)  {
+   case 'red':
+      return {...state, red: state.red + action.amount };
+   case 'green':
+      return {...state, green: state.green + action.amount };
+   case 'blue':
+      return {...state, blue: state.blue + action.amount };
+   default:
+      return state;
+
+  }
+
 
 };
 
