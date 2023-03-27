@@ -34,19 +34,19 @@ const SquareScreen = () => {
   color="Red"
    />
   <ColorCounter 
-   onIncrease={() => setColor('blue', COLOR_INCREMENT)}
-   onDecrease={() => setColor('blue', -1 * COLOR_INCREMENT)}
-  color="Blue" 
+   onIncrease={() => setColor('green', COLOR_INCREMENT)}
+   onDecrease={() => setColor('green', -1 *COLOR_INCREMENT)}
+  color="Green"
   />
   <ColorCounter 
-   onIncrease={() => setColor('green', COLOR_INCREMENT)}
-   onDecrease={() => setColor('green', -1 * COLOR_INCREMENT)}
-   color="Green" 
+    onIncrease={() => setColor('blue', COLOR_INCREMENT)}
+    onDecrease={() => setColor('blue', -1 * COLOR_INCREMENT)}
+   color="Blue" 
   />
   <View style={{ 
     height: 150, 
     width: 150, 
-    backgroundColor: `rgb(${red},${blue},${green})` }} 
+    backgroundColor: `rgb(${red},${green},${blue})` }} 
     />
   </View>
 
