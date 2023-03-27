@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useReducer } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import ColorCounter from '../components/ColorCounter';
 
 const COLOR_INCREMENT = 15;
+// action: means how can we change our state object
+const reducer = (state, action) => {
+
+};
 
 const SquareScreen = () => {
+  
+const [state, dispatch] = useReducer(reducer, { red: 0, green: 0, blue: 0});
     
 
  return (
