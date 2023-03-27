@@ -27,6 +27,7 @@ const reducer = (state, action) => {
 const SquareScreen = () => {
   
 const [state, dispatch] = useReducer(reducer, { red: 0, green: 0, blue: 0});
+const { red, green, blue } = state;
 
 // dispatch: means run my reducer
 
